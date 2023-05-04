@@ -1,0 +1,127 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto 0 auto;
+    background-color: rgb(233, 233, 233);
+    height: 100vh;
+    justify-content: center;
+
+
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 22px;
+    text-align: center;
+}
+
+#principal {
+    color: #ffffff;
+    background-color: rgb(29, 29, 29);
+    border-radius: 5px;
+    padding: 10px;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    overflow-y: auto;
+    width: 98%;
+    height: 250px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #f0efef;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#voiceSelection {
+    margin: 15px auto 5px;
+    padding: 0 15px;
+    box-sizing: border-box;
+
+}
+
+.infoText {
+    width: 80%;
+    font-size: 12px;
+    text-align: center;
+    margin: 20px auto 5px auto;
+}
+
+.btnBox {
+    width: 100%;
+    margin: 30px 10px 10px auto;
+    display: flex;
+    padding: 0 15px;
+    box-sizing: border-box;
+
+}
+
+button {
+
+    padding: 0 auto;
+    margin: 0 5px 0 auto;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(29, 29, 29);
+    background-color: #F9A03F;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: #f8962c;
+    border: solid #ffffff 1px;
+}
+
+hr {
+    width: 60%;
+    border: none;
+    border-bottom: 1px solid #F9A03F;
+    margin: 30px auto 0 auto;
+
+}
+
+.icon {
+    display: flex;
+    height: 65px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+
+}
+
+.icon i {
+    color: #F9A03F;
+    margin: 15px auto 15px auto;
+    line-height: 50px;
+    font-size: 50px;
+}
+
+#textIsertion {
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+
+
+//Outras telas
+@media only screen and (max-width: 626px) {
+    body {
+        width: fit-content;
+
+        margin: 25px auto;
+        background-color: rgb(29, 29, 29);
+    }
+}
