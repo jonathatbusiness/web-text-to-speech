@@ -2,24 +2,6 @@ const inputText = document.getElementById('inputText');
 const voiceSelection = document.getElementById('voices');
 const saveButton = document.getElementById('save');
 
-SpeechSDK.SpeechSynthesisResult = function () {
-    var _text = "";
-    var _errorDetails = undefined;
-
-    Object.defineProperties(this, {
-        "text": {
-            get: function () { return _text; },
-            set: function (text) { _text = text; },
-            enumerable: true
-        },
-        "errorDetails": {
-            get: function () { return _errorDetails; },
-            set: function (errorDetails) { _errorDetails = errorDetails; },
-            enumerable: true
-        }
-    });
-};
-
 saveButton.addEventListener('click', async () => {
     const voice = voiceSelection.value;
     const text = inputText.value;
