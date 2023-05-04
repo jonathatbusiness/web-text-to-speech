@@ -12,19 +12,15 @@ The actual project needs to be configurated for correct working and you need a M
 
 You can find more details here: [Cognitive Speech Services – Text/Speech Analysis | Microsoft Azure](https://azure.microsoft.com/en-us/products/cognitive-services/speech-services/).
 
+**What information need to be filled in this project to work properly?**
 
+**HTML:** You'll need to fill in your Subscription Key and Region in the following code:
 
-**What informations need to be filled in this project to work poperly?**
-
-**HTML:** You'll need to fill your Subscription Key in the folowing code line:
-
-<script>
+```javascript
 const speechConfig = SpeechSDK.SpeechConfig.fromSubscription("<enter-your-subscription-key>", "enter-your-region");
-</script>
+```
 
-**Javascript code:** You'll need to fill correctly the folowing code lines:
-
-
+**Javascript code:** You'll need to fill correctly the following code lines:
 
 ```javascript
 const token = await fetch('https://<your-region>.api.cognitive.microsoft.com/sts/v1.0/issuetoken', {}
