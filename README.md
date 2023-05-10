@@ -6,11 +6,15 @@ This web text-to-speech project turns text into speech, saving the result into a
 
 As a javascript study project, I used the OpenAI ChatGPT to help me generate de javascript codes.
 
+
+
 **Important:**
 
 The actual project needs to be configurated for correct working and you need a Microsoft Azure account to get the data needed, like a subscription key.
 
 You can find more details here: [Cognitive Speech Services – Text/Speech Analysis | Microsoft Azure](https://azure.microsoft.com/en-us/products/cognitive-services/speech-services/).
+
+
 
 **What information need to be filled in this project to work properly?**
 
@@ -33,3 +37,14 @@ const token = await fetch('https://<your-region>.api.cognitive.microsoft.com/sts
 ```javascript
 const url = `https://<your-region>.tts.speech.microsoft.com/cognitiveservices/v1?language=${voice}&voice=${voice}`;
 ```
+
+**Also, to configure the voices, do this by editing the <option> lines at index HTML:**
+
+```html
+<select id="voices" name="voices">
+                <option value="en-US-AmberNeural">Amber (English)</option>
+                <option value="en-US-BrandonNeural">Brendon (English)</option>
+            </select>
+```
+
+**To find the available voices and their code, visit:** https://docs.microsoft.com/pt-br/azure/cognitive-services/speech-service/language-support#neural-voices
